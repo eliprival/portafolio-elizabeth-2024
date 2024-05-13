@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px, ... 
+    font-size: 62.5% -- 1rem = 10px*/
+
+html { 
+    font-size: 62.5%;
+}
+
+:root {
+    --header-height: 3rem;
+    --hue-color-primary: 271;
+    --hue-color-secondary: 169;
+    --hue-color-text: 0;
+    
+
+    --first-color: hsl(var(--hue-color-primary), 37%, 24%);
+    --first-color-second: hsl(var(--hue-color-primary), 37%, 24%);
+    --first-color-alt: hsl(var(--hue-color-secondary), 62%, 15%);
+    --first-color-lighter: hsl(var(--hue-color-secondary), 37%, 24%);
+    --title-color: hsl(135, 74%, 80%) ;
+    --text-color: hsl(var(--hue-color-text), 2%, 11%); 
+    --text-color-light: hsl(var(--hue-color-text), 2%, 11%);
+    --input-color: hsl(var(--hue-color-primary), 37%, 24%);
+    --body-color: hsl(var(--hue-color-primary), 37%, 24%);
+    --container-color: #FFF;
+
+    --body-font:  "Lato", sans-serif;
+    --big-font-size: 3.2rem;
+    --h1-font-size: 2.4rem;
+    --h2-font-size: 2rem;
+    --h3-fotn-size: 1.8rem;
+    --normal-font-size: 1.5rem;
+    --small-font-size: 1.3rem;
+    --smaller-font-size: 1.2rem;
+ 
+    --font-weight-medium: 400;
+    --font-weight-bold: 700;
+}
+
+p {
+    font-size: 10rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
