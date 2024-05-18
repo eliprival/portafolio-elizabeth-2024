@@ -1,24 +1,417 @@
 <!DOCTYPE html>
-<html lang = "en - US">
+<html lang = "en-US">
     <head>
         <meta charset="utf-8">
         <title>Elizabeth`s portfolio</title>
-        <meta name="viewport" content="width=device=width, initial-scale=1.0">
-        <link rel="stylesheet" href="./Assets/css/style.css">
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./Assets/css/style.css">
+        
+    
     </head>
     <body>
-        <header>
-            <div>
-                <p>hola soy un texto</p>
-                <h1>hola soy un h1</h1>
-            </div>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Elizabeth</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid"> 
+
+                        <li class="nav__item">
+                            <a href="#hero" class="nav__link active-link">
+                                <i class='bx bx-home-alt nav__icon'></i> Hero
+                            </a>
+                        </li>  
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link active-link">
+                                <i class='bx bxs-user-detail nav__icon'></i> About me
+                            </a>
+                        </li> 
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link active-link">
+                                <i class='bx bx-list-plus nav__icon'></i> Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link active-link">
+                                <i class='bx bx-landscape nav__icon'></i> Portfolio
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#reviews" class="nav__link active-link"> 
+                                <i class='bx bx-conversation nav__icon'></i> Reviews
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link active-link">
+                                <i class='bx bx-message-square-dots nav__icon'></i> Contact me
+                            </a>
+                        </li>               
+                    </ul>
+
+                    <i class='bx bx-x nav__close' id="nav-close"></i> 
+                </div>
+
+                <div class="nav__btns">
+
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-menu' ></i>
+                    </div>
+                </div>        
+            </nav>
         </header>
-        <main>
-         <script src="./Assets/js/main.js"></script>
+
+        <main class="main">
+
+            <section class="hero section" id="hero">
+                <div class="hero__container container grid">
+                    <div class="hero__content">
+                        <div class="hero__social">
+                            <div>
+                            <a href="https://www.linkedin.com/in/elizabeth-prieto-aa40952b7/" target="_blank" class="hero__social-icon">
+                                 <i class='bx bxl-linkedin'></i>
+                                </a>
+                        </div>
+    
+                         <div>
+                             <a href="https://github.com/eliprival" target="_blank" class="hero__social-icon">
+                                <i class='bx bxl-github' ></i>
+                                </a>
+                        </div>
+    
+                        <div>
+                            <a href="https://www.instagram.com/eliprival/" target="_blank" class="hero__social-icon">
+                                <i class='bx bxl-instagram'></i>
+                                </a>
+                        </div>
+                    </div>
+                                                                      
+                             <div class="hero__img">
+                                <svg class="hero__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                   
+                                    <image class="hero__blob-img" x= "12" y="10" href="./Assets/img/Eli Photo.png"/>
+                                </g>
+                            </svg>
+                            </div>
+                        
+                            <div class="hero__data">
+                                <h1 class="hero__title">Hi, <span class="hero__title-animation">👋🏻</span> I am  Elizabeth</h1>
+
+                                <h3 class="hero__subtitle">
+                                    <span id="typing"></span>
+                                </h3>
+                                <p class="hero__description">
+                                Always reaching for high quality work
+                                </p>
+                                <a href="#contact" class="button button--flex">
+                               Contact me <i class='bx bx-send button-icon' ></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="hero__scroll">
+                            <a href="#about" class="hero__scroll-button button--flex">
+                                <i class='bx bx-mouse hero__scroll-mouse'></i>
+                                <span class="hero__scroll-name">Scroll down</span>
+                                <i class='bx bx-down-arrow-circle hero__scroll-arrow'></i>
+                            </a>
+                        </div>
+                </div>
+            </section>
+
+            <section class="about section" id="about">
+
+               <h2 class="section__title">ABOUT ME</h2>
+
+               <span class="section__subtitle">My introduction</span>
+
+               <div class="about__container container grid">
+                <img src="./Assets/img/Eli 2.png" alt="" class="about__img">
+               </div>
+
+               <div class="about__data">
+                <p class="about__description">Current student at Academlo, with some knowledge on certain technologies for frontend web developement</p>
+               </div>
+
+               <div class="about__info">
+                <span class="about__info-title">01+</span>
+                <span class="about__info-name">Years <br>experience</span>
+               </div>
+
+               <div class="about__info">
+                <span class="about__info-title">01+</span>
+                <span class="about__info-name">Completed<br>proyects</span>
+               </div>
+
+               <div class="about__info">
+                <span class="about__info-title">01+</span>
+                <span class="about__info-name">Companies<br>worked</span>
+               </div>
+
+               <div class="about__buttons">
+                <a download="" href="" class="button button--flex">
+                    Download CV<i class='bx bxs-file-pdf button__icon'></i>
+                </a>
+               </div>   
+            </section>
+
+            <section class="skills section" id="skills">
+               <h2 class="section__title">Skills</h2> 
+               <span class="section__subtitle">Technologies I know</span>  
+               <div class="skills__container container grid">
+                <div class="skills__container">
+                    <div class='skills__card'>
+                      <div class="skills__icon">
+                        <img src='assets/icons/html.svg' alt='html'>
+                      </div>
+                      <span class="skills__text">HTML</span>
+                    </div>
+      
+                    <div class='skills__card'>
+                      <div class="skills__icon">
+                        <img src='assets/icons/css.svg' alt='html'>
+                      </div>
+                      <span class="skills__text">CSS</span>
+                    </div>
+      
+                    <div class='skills__card'>
+                      <div class="skills__icon">
+                        <img src='assets/icons/javascript.svg' alt='html'>
+                      </div>
+                      <span class="skills__text">JavaScript</span>
+                    </div>
+      
+                    <div class='skills__card'>
+                      <div class="skills__icon">
+                        <img src='assets/icons/git.svg' alt='html'>
+                      </div>
+                      <span class="skills__text">Git</span>
+                    </div>
+      
+               </div>              
+              </section>
+
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">PROJECTS</h2>
+                <span class="section__subtitle">Recent projects</span>
+                <div class="portfolio__container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./Assets/img/Portfolio 1.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Modern website</h3>
+                                <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laboriosam incidunt saepe illum optio quasi soluta dolorum assumenda praesentium, blanditiis fuga! Labore animi cumque minima mollitia ullam fugit. Eaque, doloremque.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">Demo
+                                    <i class='bx bx-right-arrow-alt button__icon'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./Assets/img/portfolio 4.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Ecommerce website</h3>
+                                <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laboriosam incidunt saepe illum optio quasi soluta dolorum assumenda praesentium, blanditiis fuga! Labore animi cumque minima mollitia ullam fugit. Eaque, doloremque.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">Demo
+                                    <i class='bx bx-right-arrow-alt button__icon'></i> 
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./Assets/img/portfolio 2.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Other</h3>
+                                <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laboriosam incidunt saepe illum optio quasi soluta dolorum assumenda praesentium, blanditiis fuga! Labore animi cumque minima mollitia ullam fugit. Eaque, doloremque.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">Demo
+                                    <i class='bx bx-right-arrow-alt button__icon'></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./Assets/img/portfolio 3.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Other</h3>
+                                <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laboriosam incidunt saepe illum optio quasi soluta dolorum assumenda praesentium, blanditiis fuga! Labore animi cumque minima mollitia ullam fugit. Eaque, doloremque.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">Demo
+                                    <i class='bx bx-right-arrow-alt button__icon'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class='bx bx-chevron-right swiper-portfolio-icon'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-chevron-left swiper-portfolio-icon'></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </section>
+
+            <section class="reviews section" id="reviews">
+                <h2 class="section__title">REVIEWS</h2>
+                <span class="section__subtitle">What my clients and colleages say</span>
+                <div class="reviews__container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="reviews__content swiper-slide">
+                            <div class="reviews__data">
+                                <div class="reviews__header">
+                                    <img src="./Assets/img/reviews 1.jpg" alt="" class="reviews__img">
+                                    <div>
+                                        <h3 class="reviews__name">Juan Perez</h3>
+                                        <span class="reviews__client">Client</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                </div>
+                            </div>
+                            <p class="reviews__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in enim debitis doloribus natus aspernatur, rerum ab doloremque quo, aliquid praesentium, similique dolorem quaerat laborum amet! Qui aspernatur alias itaque.
+                            </p>
+                        </div>
+
+                        <div class="reviews__content swiper-slide">
+                            <div class="reviews__data">
+                                <div class="reviews__header">
+                                    <img src="./Assets/img/reviews 3.jpg" alt="" class="reviews__img">
+                                    <div>
+                                        <h3 class="reviews__name">Albert Jimenez</h3>
+                                        <span class="reviews__client">Client</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                </div>
+                            </div>
+                            <p class="reviews__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in enim debitis doloribus natus aspernatur, rerum ab doloremque quo, aliquid praesentium, similique dolorem quaerat laborum amet! Qui aspernatur alias itaque.
+                            </p>
+                        </div>
+
+                        <div class="reviews__content swiper-slide">
+                            <div class="reviews__data">
+                                <div class="reviews__header">
+                                    <img src="./Assets/img/reviews 2.jpg" alt="" class="reviews__img">
+                                    <div>
+                                        <h3 class="reviews__name">Andrea Lopez</h3>
+                                        <span class="reviews__client">Colleage</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                    <i class='bx bxs-star reviews__icon-star'></i>
+                                </div>
+                            </div>
+                            <p class="reviews__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in enim debitis doloribus natus aspernatur, rerum ab doloremque quo, aliquid praesentium, similique dolorem quaerat laborum amet! Qui aspernatur alias itaque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-reviews"></div>
+                </div>
+            </section>
+
+            <section class="contact section" id="contact">
+                <h2 class="section__title"> CONTACT ME</h2>
+                <span class="section__subtitle">Get in touch</span>
+                <div class="contact__container container grid">
+                    <div class="contact__information">
+                        <p class="contact__text">Si tienen preguntas no duden en enviarme un correo electrónico.</p>
+
+                        <div class='contact__box'>
+                          <a class="contact__link" href='mailto: eliprival@gmail.com'>
+                            <i class="bx bxs-envelope  contact__icon"></i>
+                            <p>eliprival@gmail.com</p>
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <footer class="footer">
+         <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Elizabeth</h1>
+                    <span class="footer__subtitle">Fullstack developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#hero">Hero</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/elizabeth-prieto-aa40952b7/" target="blank" class="footer__social">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+
+                    <a href="https://github.com/eliprival" target="blank" class="footer__social">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/eliprival/" target="blank" class="footer__social">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </div> 
+            </div>
+            <p class="footer__copy">&copy; 2024 - Todos los derechos reservados</p>
+         </div>
+        </footer>
+        
+        <a href="#" class="scrollup" id="scrollup">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
+        
+            <script src="./Assets/js/swiper-bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
+            <script src="./Assets/js/main.js"></script>
+            
     </body>
 </html>
